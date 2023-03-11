@@ -81,8 +81,8 @@ h2 {
     width: 100%;
 }
 .accordion__image > img {
-    height: 0.00001rem;
-    width: 0.00001rem;
+    height: 0%;
+    width: 0%;
     overflow: hidden;
     transition: 0.5s;
 }
