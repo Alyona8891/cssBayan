@@ -59,7 +59,7 @@ main {
 .accordion__image {
     display: flex;
     justify-content: center;
-    
+    transition: 0.5s;
 }
 h2 {
     color: rgb(7, 66, 138);
@@ -72,7 +72,6 @@ h2 {
 .accordion__title {
     color: black;
     transition: 0.7s;
-    
 }
 .accordion__title-block {
     display: flex;
@@ -91,13 +90,13 @@ h2 {
     border-bottom: 0.15rem solid gold;
 }
 @media (hover: hover) {
-    .accordion__item:hover  label > .accordion__image> img{
+    .accordion__item:hover  label > .accordion__image > img {
         width: 30%;
         height: 30%;
         transform: scale(1);
         transition: all 1s ;
     }
-    .accordion:hover  .accordion__item > label> .accordion__title-block > .accodion__icon  {
+    .accordion:hover  .accordion__item > label > .accordion__title-block > .accodion__icon {
         opacity: 1;
         transition: 0.5s;
     }
@@ -115,7 +114,6 @@ h2 {
         opacity: 1;
         transition: 0.5s;
     }
-    
 }
 input {
     display: none;
@@ -141,7 +139,6 @@ label {
     display: block;
     width: 100%;
 }
-
 i > svg {
     width: 1rem;
     height: 1rem;
@@ -172,10 +169,14 @@ i > svg {
     padding: 0.2rem;
 }
 .accordion__item:active > label> .accordion__title-block > h2{
-    color: rgb(7, 66, 138);
+    color: gold;
     transition: 0.5s;
 }
-.accordion__item:active > label> .accordion__title-block > i > svg {
-    fill: rgb(7, 66, 138);
+.accordion__item:active > label > .accordion__title-block > i > svg {
+    fill: gold;
+    transition: 0.5s;
+}
+.accordion__item:active > label > .accordion__image {
+    filter: blur(0.07rem);
     transition: 0.5s;
 }
