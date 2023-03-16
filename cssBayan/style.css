@@ -99,7 +99,7 @@ h2 {
         width: 30%;
         height: 30%;
         transform: scale(1);
-        transition: all 1s ;
+        transition: all 0.3s ;
     }
     .accordion:hover  .accordion__item > label > .accordion__title-block > .accodion__icon {
         opacity: 1;
@@ -125,11 +125,11 @@ input {
 }
 .accordion__input:checked ~ label > .accordion__image> img{
     overflow: visible;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
     justify-content: center;
     transform: scale(1);
-    transition: all 1s ;
+    transition: all 0.3s ;
     margin-top: 0.5rem;
 } 
 @media (min-width: 830px) {
@@ -143,6 +143,7 @@ label {
     cursor: pointer;
     display: block;
     width: 100%;
+    padding: 1rem;
 }
 i > svg  {
     width: 1rem;
